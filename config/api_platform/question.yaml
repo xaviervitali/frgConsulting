@@ -1,0 +1,9 @@
+resources:
+  App\Entity\Question:
+    attributes:
+      normalization_context:
+        groups: 'question:read'
+      collection:
+        pagination:
+          enabled: true
+      order: {"updatedAt":"DESC"}

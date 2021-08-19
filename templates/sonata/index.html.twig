@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Export Entity{% endblock %}
+
+{% block body %}
+<div class="d-flex justify-content-center align-items-center">
+{# <label for="pet-select">Choose a pet:</label> #}
+     {{form_start(form)}}
+            {{form_widget(form)}}
+            <button class="btn btn-success" type="submit">Exporter au format CSV</button> 
+            {{form_end(form)}}
+
+        {# <a href="{{path('export', {'entity':form_value})}}" class="btn btn-success btn-sm">Exportter le CSV</a>      #}
+    </div>
+{% endblock %}
+{% block javascripts %}
+
+       {# <script src="{{ asset('js/index.js') }}"></script> #}
+
+
+{% endblock %}  
+
+
+
